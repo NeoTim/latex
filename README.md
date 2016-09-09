@@ -1,4 +1,10 @@
-# Learn LaTeX 
+# Learn LaTeX
+
+<!-- toc -->
+
+- [资源](#资源)
+
+<!-- tocstop -->
 
 ## 资源
 * [LaTeX Templates - 包含多种LaTeX模板](http://www.latextemplates.com/)
