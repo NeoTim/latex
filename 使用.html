@@ -29,6 +29,10 @@
         
     
         
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-back-to-top-button/plugin.css">
+        
+    
+        
         <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
         
     
@@ -46,7 +50,7 @@
     <link rel="next" href="./tikz.html" />
     
     
-    <link rel="prev" href="./index.html" />
+    <link rel="prev" href="./资源.html" />
     
 
         
@@ -55,11 +59,11 @@
         
         
     <div class="book"
-        data-level="1"
+        data-level="2"
         data-chapter-title="语法"
         data-filepath="使用.md"
         data-basepath="."
-        data-revision="Sat Sep 10 2016 10:26:57 GMT+0800 (CST)"
+        data-revision="Sat Sep 10 2016 13:46:07 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -95,14 +99,29 @@
             
         </li>
     
-        <li class="chapter active" data-level="1" data-path="使用.html">
+        <li class="chapter " data-level="1" data-path="资源.html">
+            
+                
+                    <a href="./资源.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        资源
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2" data-path="使用.html">
             
                 
                     <a href="./使用.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.</b>
+                            <b>2.</b>
                         
                         语法
                     </a>
@@ -110,14 +129,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2" data-path="tikz.html">
+        <li class="chapter " data-level="3" data-path="tikz.html">
             
                 
                     <a href="./tikz.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.</b>
+                            <b>3.</b>
                         
                         Tikz
                     </a>
@@ -125,31 +144,16 @@
             
         </li>
     
-        <li class="chapter " data-level="3" data-path="公式.html">
+        <li class="chapter " data-level="4" data-path="公式.html">
             
                 
                     <a href="./公式.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.</b>
-                        
-                        公式
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4" data-path="论文写作.html">
-            
-                
-                    <a href="./论文写作.html">
-                
-                        <i class="fa fa-check"></i>
-                        
                             <b>4.</b>
                         
-                        论文写作
+                        公式
                     </a>
             
             
@@ -224,6 +228,8 @@
 <li><a href="#&#x8BBE;&#x7F6E;">&#x8BBE;&#x7F6E;</a><ul>
 <li><a href="#&#x9875;&#x9762;&#x8FB9;&#x8DDD;">&#x9875;&#x9762;&#x8FB9;&#x8DDD;</a></li>
 <li><a href="#&#x4E2D;&#x6587;&#x652F;&#x6301;">&#x4E2D;&#x6587;&#x652F;&#x6301;</a></li>
+<li><a href="#&#x7D22;&#x5F15;">&#x7D22;&#x5F15;</a></li>
+<li><a href="#header-and-footer">header and footer</a></li>
 </ul>
 </li>
 <li><a href="#documentclass">documentclass</a></li>
@@ -256,6 +262,17 @@
 <pre><code> \usepackage[top=32mm, bottom=32mm, left=20mm, right=20mm]{geometry}
 </code></pre><h3 id="&#x4E2D;&#x6587;&#x652F;&#x6301;">&#x4E2D;&#x6587;&#x652F;&#x6301;</h3>
 <pre><code>\usepackage{ctex}
+</code></pre><h3 id="&#x7D22;&#x5F15;">&#x7D22;&#x5F15;</h3>
+<p>&#x5DE6;&#x4FA7;&#x76EE;&#x5F55;</p>
+<pre><code>\usepackage{titling} % Customizing the title section
+\usepackage{hyperref} % For hyperlinks in the PDF
+</code></pre><h3 id="header-and-footer">header and footer</h3>
+<pre><code>\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Running title $\bullet$ May 2016 $\bullet$ Vol. XXI, No. 1} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
 </code></pre><h2 id="documentclass">documentclass</h2>
 <p>&#x6BCF;&#x4E2A;latex&#x5F00;&#x5934;&#x90FD;&#x8981;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#x7C7B;&#x522B;&#xFF0C;latex&#x4E2D;&#x5185;&#x7F6E;&#x4E86;&#x4E00;&#x4E9B;&#x6587;&#x6863;&#x7C7B;&#x522B;&#xFF0C;&#x4F8B;&#x5982;<code>article</code>, <code>report</code>, <code>book</code>, <code>letter</code>,<code>minimal</code>&#x7B49;&#x3002;</p>
 <p>&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#x6240;&#x793A;</p>
@@ -506,6 +523,7 @@ item b b
 <li>&#x4E0B;&#x6807; - <code>$_$</code> &#x4F8B;&#x5B50;&#xFF1A;<code>$a_1$</code></li>
 <li>&#x500D;&#x6570;&#xFF08;X&#xFF09; - <code>$\times$</code></li>
 <li>&#x5927;&#x7EA6; ~ - <code>$\sim$</code></li>
+<li>url - <code>\href{&lt;url&gt;}{&lt;text to display&gt;}.</code></li>
 </ul>
 
                     
@@ -517,7 +535,7 @@ item b b
         </div>
 
         
-        <a href="./index.html" class="navigation navigation-prev " aria-label="Previous page: 前言"><i class="fa fa-angle-left"></i></a>
+        <a href="./资源.html" class="navigation navigation-prev " aria-label="Previous page: 资源"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="./tikz.html" class="navigation navigation-next " aria-label="Next page: Tikz"><i class="fa fa-angle-right"></i></a>
@@ -545,6 +563,10 @@ item b b
     
 
     
+    <script src="gitbook/plugins/gitbook-plugin-back-to-top-button/plugin.js"></script>
+    
+
+    
     <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
     
 
@@ -554,7 +576,7 @@ item b b
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"duoshuo":{"short_name":"zhangjkblog","theme":"default"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["vim"]},"github":{"url":"https://github.com/zhangjikai/notes"},"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"baidu":{"token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sitemap":{"hostname":"http://notes.zhangjikai.com"},"toc":{"addClass":true,"className":"toc"},"anchors":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    var config = {"duoshuo":{"short_name":"zhangjkblog","theme":"default"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["vim"]},"github":{"url":"https://github.com/zhangjikai/latex"},"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"baidu":{"token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sitemap":{"hostname":"http://latex.zhangjikai.com"},"toc":{"addClass":true,"className":"toc"},"anchors":{},"back-to-top-button":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}};
     gitbook.start(config);
 });
 </script>
